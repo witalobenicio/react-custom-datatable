@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router'
-import RooveHeader from './RooveHeader';
-import RooveLine from './RooveLine';
+import Header from './Header';
+import Row from './Row';
 import ScrollListView from './../listview/ScrollListView';
 import {Sticky, StickyContainer} from 'react-sticky';
-import EventListener, {withOptions} from 'react-event-listener';
 
-class ReactRooveTable extends Component {
+class Table extends Component {
 
   constructor() {
     super();
@@ -259,7 +258,7 @@ class ReactRooveTable extends Component {
 
         { this.props.disableSticky ?
           <div>
-            <RooveHeader
+            <Header
               renderRowExpand={this.props.renderRowExpand}
               useShowHideColumns={this.props.useShowHideColumns}
               changeColumnVisible={this.changeColumnsVisible.bind(this)}
@@ -289,14 +288,14 @@ class ReactRooveTable extends Component {
               pageStart={this.props.pageStart}
               useWindow={this.props.useWindow}
               data={this.getItems()}
-              adapter={RooveLine}
+              adapter={Row}
               ref={'list'}
             />
           </div>
           :
           <StickyContainer>
             <Sticky {...this.props.stickyProps} stickyStyle={{zIndex: 99, top: '60px'}}>
-              <RooveHeader
+              <Header
                 changeColumnVisible={this.changeColumnsVisible.bind(this)}
                 useShowHideColumns={this.props.useShowHideColumns}
                 columnsVisible={this.state.columnsVisible}
@@ -329,7 +328,7 @@ class ReactRooveTable extends Component {
               pageStart={this.props.pageStart}
               useWindow={this.props.useWindow}
               data={this.getItems()}
-              adapter={RooveLine}
+              adapter={Row}
               ref={'list'}
             />
           </StickyContainer>
@@ -339,4 +338,4 @@ class ReactRooveTable extends Component {
   }
 }
 
-export default withRouter(ReactRooveTable, {withRef: true});
+export default withRouter(Table, {withRef: true});

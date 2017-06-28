@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import 'lodash';
 import {withRouter} from 'react-router'
 
-class RooveLine extends Component {
+class Row extends Component {
 
   constructor() {
     super();
@@ -139,4 +139,4 @@ class RooveLine extends Component {
   }
 }
 
-export default withRouter(RooveLine, {withRef: true});
+export default withRouter(Row, {withRef: true});

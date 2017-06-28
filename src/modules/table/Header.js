@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router'
 
-class ReactRooveTable extends Component {
+class Header extends Component {
 
   constructor() {
     super();
@@ -70,4 +70,4 @@ class ReactRooveTable extends Component {
   }
 }
 
-export default withRouter(ReactRooveTable, {withRef: true});
+export default withRouter(Header, {withRef: true});
