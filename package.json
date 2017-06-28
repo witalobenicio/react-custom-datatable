@@ -1,0 +1,31 @@
+{
+  "name": "react-datatable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witalobenicio/react-datatable.git"
+  },
+  "author": {
+    "name": "Witalo benicio",
+    "email": "contato@witalobenicio.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/witalobenicio/react-custom-datatable/issues"
+  },
+  "homepage": "https://github.com/witalobenicio/react-custom-datatable#readme",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "react": "15.4.1",
+    "react-dom": "15.4.1",
+    "react-sticky": "5.0.8",
+    "react-router": "2.8.0",
+    "react-infinite-scroller": "1.0.4",
+    "react-event-listener": "0.4.5"
+  }
+}
