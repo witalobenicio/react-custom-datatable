@@ -18,7 +18,7 @@ A react component similar to the very known jquery datatable.
 - Sticky header
 
 ## Getting started
-`npm install react-datatable --save`
+`npm install react-custom-datatable --save`
 
 ### Example
 ``
