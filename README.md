@@ -20,6 +20,13 @@ A react component similar to the very known jquery datatable.
 ## Getting started
 `npm install react-custom-datatable --save`
 
+### CSS
+To use the default theme you have to import the .less in your main .less file
+
+Or
+
+Use the generated .css file.
+
 ### Example
 ``
 
