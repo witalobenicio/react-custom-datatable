@@ -1,14 +1,14 @@
 {
-  "name": "react-datatable",
+  "name": "react-custom-datatable",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React Component to create a custom 'table' very similar to the known Jquery DataTable plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witalobenicio/react-datatable.git"
+    "url": "git+https://github.com/witalobenicio/react-custom-datatable.git"
   },
   "author": {
     "name": "Witalo benicio",
