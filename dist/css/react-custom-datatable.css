@@ -1,0 +1,249 @@
+.table .group-header div.header:first-child {
+    margin-bottom: -18px;
+}
+.table .group-header div.th {
+    padding: 10px;
+}
+.row-box {
+    background: #fff;
+    margin-bottom: 8px;
+}
+.table.border div.sticky {
+    background: #d1d1d1;
+}
+.table.border div.sticky div.td,
+.table.border div.sticky div.th {
+    border: 1px solid #e2e2e2;
+}
+.table.border .header,
+.table.border .line {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.table.border div.td {
+    border: 1px solid #e2e2e2;
+}
+.table.border div.th {
+    border: 2px solid #e2e2e2;
+}
+.table {
+    width: 100%;
+    padding-top: 30px;
+}
+.table.red .product .td {
+    color: #a81d11;
+}
+.table.isilist .product {
+    background: #FFF;
+}
+.table.isilist .product .td {
+    color: #000;
+    font-weight: 700;
+}
+.table.isilist .product img {
+    width: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+.table.isilist .red .td {
+    color: #d62516;
+}
+.table.isilist .black .td {
+    color: #000;
+}
+.table.isilist .green .td {
+    color: #66b01b;
+}
+.table .product.selected {
+    background: #ECFBFF;
+    border-left: 2px #1E88E5;
+}
+.table .line.resume:nth-of-type(even) {
+    background: #f2f2f2;
+}
+.table .line {
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #FFF;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    position: relative;
+    max-height: 60px;
+}
+.table .line:hover:not(.header) {
+    background: #f6fdff;
+    border-left: 2px solid #1E88E5;
+}
+.table .line.product {
+    min-height: 60px;
+}
+.table .line .td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #000;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.5s;
+}
+.table .line .th {
+    cursor: pointer;
+    color: #000000;
+    text-align: left;
+    float: left;
+    transition: all 0.5s;
+}
+.table .line .line-badge {
+    background: #666666;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+.table .line .line-badge i {
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.table .header {
+    background: #d1d1d1;
+    padding: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.table .header.transparent {
+    background: transparent !important;
+}
+.table .header .th {
+    font-weight: 700;
+}
+.table .even.historic {
+    background: #f2f2f2;
+}
+.table .historic {
+    padding: 8px;
+}
+.table .historic img {
+    width: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+.table .historic .td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.table .historic.plus * {
+    color: #1E88E5;
+}
+.table .historic.plus .line-badge {
+    background: #1E88E5;
+}
+.table .historic.done * {
+    color: #66b01b;
+}
+.table .historic.done .line-badge {
+    background: #66b01b;
+}
+.table .historic.less * {
+    color: #ca9703;
+}
+.table .historic.less .line-badge {
+    background: #ca9703;
+}
+.table .historic.none * {
+    color: #d62516;
+}
+.table .historic.none .line-badge {
+    background: #d62516;
+}
+.table .product {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.table .product .check {
+    display: table;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    background: #66b01b;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.table .product .check i {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.table .product.done {
+    background: #F2FFE2 !important;
+}
+.table .product.done img {
+    margin-right: 30px !important;
+}
+.table.vertical {
+    width: auto;
+    overflow: scroll;
+}
+.table.vertical .line {
+    margin-bottom: 0px !important;
+    width: auto;
+    padding: 0px;
+}
+.table.vertical .line.featured {
+    background: #e5e5e5;
+}
+.table.vertical .line.featured .th {
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+.table.vertical .line.featured .td {
+    text-align: center;
+    font-weight: 700;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
+.table.vertical .line .th {
+    width: 200px !important;
+    vertical-align: middle;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-right: 1px solid #e2e2e2;
+    display: inline-block;
+    float: none;
+}
+.table.vertical .line .td {
+    border-right: 1px solid #e2e2e2;
+    padding-right: 8px;
+    text-align: right;
+    min-height: 29px;
+    min-width: 110px !important;
+    display: inline-block;
+    float: none;
+}
+.td input[type="number"] {
+    width: 80%;
+    height: 30px;
+    padding: 3px 5px;
+    display: inline-block;
+}
+.table .line.resume .th {
+    font-size: 9pt;
+}
+.table .line.resume.red .td {
+    color: #dc3c2b;
+}
+.table .line.resume .td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 9pt;
+}
