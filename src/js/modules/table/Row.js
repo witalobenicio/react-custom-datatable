@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import 'lodash';
 import {withRouter} from 'react-router'
 
-class Row extends Component {
+export default class Row extends Component {
 
   constructor() {
     super();
@@ -138,5 +138,3 @@ class Row extends Component {
     );
   }
 }
-
-export default withRouter(Row, {withRef: true});

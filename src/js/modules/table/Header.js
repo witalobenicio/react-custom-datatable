@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router'
 
-class Header extends Component {
+export default class Header extends Component {
 
   constructor() {
     super();
@@ -69,5 +69,3 @@ class Header extends Component {
     );
   }
 }
-
-export default withRouter(Header, {withRef: true});

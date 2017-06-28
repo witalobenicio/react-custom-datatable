@@ -5,7 +5,7 @@ import Row from './Row';
 import ScrollListView from '../listview/ScrollListView';
 import {Sticky, StickyContainer} from 'react-sticky';
 
-class Table extends Component {
+export default class Table extends Component {
 
   constructor() {
     super();
@@ -74,10 +74,6 @@ class Table extends Component {
         this.setState({searchString: value});
       }
     });
-  }
-
-  back() {
-    this.props.router.replace('/');
   }
 
   sortArrayBy = function (field, reverse, pr) {
@@ -337,5 +333,3 @@ class Table extends Component {
     );
   }
 }
-
-export default withRouter(Table, {withRef: true});
