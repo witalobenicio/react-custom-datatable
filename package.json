@@ -2,8 +2,11 @@
   "name": "react-custom-datatable",
   "version": "1.0.1",
   "description": "A React Component to create a custom 'table' very similar to the known Jquery DataTable plugin",
-  "main": "index.js",
+  "main": "dist/js/react-custom-datatable.js",
   "scripts": {
+    "build": "webpack src/js/index.js dist/js/react-datatable.js",
+    "build-min": "node ./build",
+    "watch": "webpack src/js/index.js dist/js/react-datatable.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,13 +22,27 @@
     "url": "https://github.com/witalobenicio/react-custom-datatable/issues"
   },
   "homepage": "https://github.com/witalobenicio/react-custom-datatable#readme",
-  "dependencies": {
+  "devDependencies": {
+    "babel-core": "6.10.4",
+    "babel-eslint": "6.1.2",
+    "babel-loader": "6.2.4",
+    "babel-plugin-syntax-trailing-function-commas": "6.8.0",
+    "babel-plugin-transform-class-properties": "6.10.2",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-react-constant-elements": "6.9.1",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-es2016": "6.11.3",
+    "babel-preset-react": "6.11.1",
+    "copy-webpack-plugin": "^4.0.1",
     "lodash": "4.17.4",
     "react": "15.4.1",
     "react-dom": "15.4.1",
     "react-sticky": "5.0.8",
     "react-router": "2.8.0",
     "react-infinite-scroller": "1.0.4",
-    "react-event-listener": "0.4.5"
+    "react-event-listener": "0.4.5",
+    "rimraf": "2.5.3",
+    "webpack": "1.13.1",
+    "extract-text-webpack-plugin": "1.0.1"
   }
 }
