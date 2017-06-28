@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import 'lodash';
-import {withRouter} from 'react-router'
 
 export default class Row extends Component {
 

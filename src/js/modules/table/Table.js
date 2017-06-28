@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router'
 import Header from './Header';
 import Row from './Row';
 import ScrollListView from '../listview/ScrollListView';
