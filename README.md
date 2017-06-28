@@ -1,5 +1,5 @@
-# react-datatable
-A react component similar to the very known jquery datatable.
+# react-custom-datatable
+A React Component to create a custom 'table' similar to the very known jquery datatable.
 
 ### Features of react-datatable
 - Default theme
