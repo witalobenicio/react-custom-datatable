@@ -5,7 +5,7 @@ class Table extends Component {
 
   render() {
     return (
-      <ComponentTable {...props} />
+      <ComponentTable {...this.props} />
     )
   }
 
