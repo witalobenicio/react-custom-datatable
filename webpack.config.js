@@ -18,9 +18,13 @@ module.exports = {
     filename: 'react-custom-datatable.js',
     // TODO: this wouldn't work for e.g. GH Pages.
     // Good news: we can infer it from package.json :-)
-    publicPath: '/'
+    publicPath: '/',
+    libraryTarget: 'umd2'
   },
   resolve: {
+    alias: {
+      'react': path.join(__dirname, 'node_modules', 'react')
+    },
     extensions: ['', '.js'],
   },
   resolveLoader: {
