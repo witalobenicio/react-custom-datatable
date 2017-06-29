@@ -35,7 +35,7 @@ Use the generated .css file
 - `initialSortProp`: property to initially sort items 
 - `pageStart`: value of items rendered on each scroll that reaches bottom 
 - `useWindow`: used when using endless scroll, to tell if the scroll is relative to window (default: `true`)
-- `stickyProps`: receives an object containing props to the StickyHeader
+- `topOffset`: int to indicate distance of header to top (in px) when sticky
 - `disableSticky`: disable Sticky header (default: `false`)
 - `useShowHideColumns`: enable show/hide columns (defaul: `false`)
 - `searchProps`: properties to be used by the search (setting it enables the search box)
@@ -215,6 +215,7 @@ render () {
     useShowHideColumns={true}
     searchProps={['name', 'reference']}
     enableCheck={true}
+    topOffset={60}
     disableSticky={true}
   />
  ); 
