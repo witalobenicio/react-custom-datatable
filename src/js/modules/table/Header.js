@@ -28,8 +28,14 @@ export default class Header extends Component {
 
   render() {
 
+    if (this.props.isSticky) {
+      this.props.style.top = this.props.topOffset || '0px'
+    } else {
+      this.props.style.top = '0px'
+    }
+
     return (
-        <div className="line header resume">
+        <div className="line header" style={this.props.style}>
             {!!this.props.enableCheck && (
               <div className="be-checkbox inline" style={{padding: 0}}>
                 <input type="checkbox" id={'table-selectall-' + this.props.id}

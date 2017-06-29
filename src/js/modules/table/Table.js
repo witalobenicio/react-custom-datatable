@@ -173,7 +173,7 @@ export default class Table extends Component {
 
   onChangeSearchString() {
     let key = ('search-table-' + (this.props.id || this.props.ref || 'roove'));
-    let value = this.refs[key].value;
+    let value = this.searchInput.value;
     localStorage.setItem(key, value);
     this.setState({searchString: value});
   }
@@ -216,7 +216,7 @@ export default class Table extends Component {
         style={{paddingTop: 0, marginTop: "20px"}} id="table">
 
         { this.props.searchProps && this.props.searchProps.length > 0 && (
-          <input type="text" className="form-control" ref={'search-table-' + (this.props.id || this.props.ref || 'roove')}
+          <input type="text" className="form-control" ref={(item) => this.searchInput = item}
                  id={'search-table-' + (this.props.id || this.props.ref || 'roove')}
                  placeholder="Buscar ..."
                  style={{
@@ -288,19 +288,31 @@ export default class Table extends Component {
           </div>
           :
           <StickyContainer>
-            <Sticky {...this.props.stickyProps} stickyStyle={{zIndex: 99, top: '60px'}}>
-              <Header
-                changeColumnVisible={this.changeColumnsVisible.bind(this)}
-                useShowHideColumns={this.props.useShowHideColumns}
-                columnsVisible={this.state.columnsVisible}
-                id={this.props.id || this.props.ref || 'roove'}
-                onChangeCheckAll={this.onChangeCheckAll.bind(this)}
-                enableCheck={this.props.enableCheck || false}
-                checked={this.state.selectedItems.length === this.state.items.length}
-                columns={this.state.columns}
-                getIconForSort={this.getIconForSort.bind(this)}
-                sortTable={this.sortTable.bind(this)}
-              />
+            <Sticky topOffset={this.props.topOffset || 0}>
+              {
+                ({
+                   style,
+                   isSticky
+                 }) => {
+                  return (
+                    <Header
+                      topOffset={this.props.topOffset}
+                      isSticky={isSticky}
+                      style={style}
+                      changeColumnVisible={this.changeColumnsVisible.bind(this)}
+                      useShowHideColumns={this.props.useShowHideColumns}
+                      columnsVisible={this.state.columnsVisible}
+                      id={this.props.id || this.props.ref || 'roove'}
+                      onChangeCheckAll={this.onChangeCheckAll.bind(this)}
+                      enableCheck={this.props.enableCheck || false}
+                      checked={this.state.selectedItems.length === this.state.items.length}
+                      columns={this.state.columns}
+                      getIconForSort={this.getIconForSort.bind(this)}
+                      sortTable={this.sortTable.bind(this)}
+                    />
+                  )
+                }
+              }
             </Sticky>
 
             <ScrollListView
