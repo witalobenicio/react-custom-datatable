@@ -284,7 +284,6 @@ export default class Table extends Component {
               useWindow={this.props.useWindow}
               data={this.getItems()}
               adapter={Row}
-              ref={'list'}
             />
           </div>
           :
@@ -324,7 +323,6 @@ export default class Table extends Component {
               useWindow={this.props.useWindow}
               data={this.getItems()}
               adapter={Row}
-              ref={'list'}
             />
           </StickyContainer>
         }

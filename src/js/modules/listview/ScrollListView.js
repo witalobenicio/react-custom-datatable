@@ -91,8 +91,7 @@ class ScrollListView extends React.Component {
         loader={this.getLoader()}
         loadMore={this.loadMore.bind(this)}
         hasMore={this.state.hasMore}
-        useWindow={this.state.useWindow}
-        ref={this.props.refName}>
+        useWindow={this.state.useWindow}>
 
         {this.getItems()}
 

@@ -156,8 +156,7 @@ class InfiniteListView extends React.Component {
                 hasMore={this.state.hasMore}
                 threshold={this.props.threshold}
                 loader={this.getLoader()}
-                useWindow={this.props.useWindow}
-                ref={this.props.refName}>
+                useWindow={this.props.useWindow}>
 
                 {this.getItems()}
 
