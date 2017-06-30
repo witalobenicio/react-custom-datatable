@@ -89,7 +89,7 @@ export default class Products extends Component {
 
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
@@ -182,7 +182,7 @@ export default class Products extends Component {
 
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
@@ -202,7 +202,7 @@ Here you can get an example of some props used by `react-custom-datatable`
 ```javascript
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
@@ -234,7 +234,7 @@ renderExpand() {
 
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
@@ -258,7 +258,7 @@ openModal() {
 
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
@@ -282,7 +282,7 @@ onSelectedProductsChange(items) {
 
 render () {
  return (
-  <ReactRooveTable
+  <Table
     id="table-products"
     ref="table-products"
     columns={this.state.columns}
