@@ -1,6 +1,6 @@
 {
   "name": "react-custom-datatable",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A React Component to create a custom 'table' very similar to the known Jquery DataTable plugin",
   "main": "dist/js/react-custom-datatable.js",
   "scripts": {
