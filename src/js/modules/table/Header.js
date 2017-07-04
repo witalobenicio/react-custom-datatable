@@ -28,7 +28,7 @@ export default class Header extends Component {
 
   render() {
 
-    if (this.props.disableSticky) {
+    if (!this.props.disableSticky) {
       if (this.props.isSticky) {
         this.props.style.top = this.props.topOffset || '0px'
       } else {
