@@ -254,6 +254,7 @@ export default class Table extends Component {
         { this.props.disableSticky ?
           <div>
             <Header
+              disableSticky={this.props.disableSticky}
               renderRowExpand={this.props.renderRowExpand}
               useShowHideColumns={this.props.useShowHideColumns}
               changeColumnVisible={this.changeColumnsVisible.bind(this)}
@@ -297,6 +298,7 @@ export default class Table extends Component {
                   return (
                     <Header
                       topOffset={this.props.topOffset}
+                      disableSticky={this.props.disableSticky}
                       isSticky={isSticky}
                       style={style}
                       changeColumnVisible={this.changeColumnsVisible.bind(this)}

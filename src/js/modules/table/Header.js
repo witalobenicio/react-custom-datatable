@@ -28,10 +28,12 @@ export default class Header extends Component {
 
   render() {
 
-    if (this.props.isSticky) {
-      this.props.style.top = this.props.topOffset || '0px'
-    } else {
-      this.props.style.top = '0px'
+    if (this.props.disableSticky) {
+      if (this.props.isSticky) {
+        this.props.style.top = this.props.topOffset || '0px'
+      } else {
+        this.props.style.top = '0px'
+      }
     }
 
     return (
