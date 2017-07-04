@@ -80,7 +80,7 @@ export default class Row extends Component {
   render() {
     return (
       (this.state.data !== {} && this.props.hiddenRow ? this.props.hiddenRow(this.state.data, this.state.index) : false) ? null :
-        <div className="row-box" id={ this.props.rowId || this.state.index }>
+        <div className="row-box" id={ this.state.data[this.props.rowId] || this.state.index }>
           <div onClick={this.props.onClickRow ? this.onClickRow.bind(this, this.state.data, this.state.index) : null}
                className={'line resume ' + (this.props.rowClasses && (this.props.rowClasses(this.state.data, this.state.index)))}
                style={{cursor: 'pointer'}}
