@@ -30,7 +30,8 @@ export default class Header extends Component {
 
     if (!this.props.disableSticky) {
       if (this.props.isSticky) {
-        this.props.style.top = this.props.topOffset || '0px'
+        this.props.style.top = this.props.topOffset || '0px';
+        this.props.style.zIndex = 9;
       } else {
         this.props.style.top = '0px'
       }
