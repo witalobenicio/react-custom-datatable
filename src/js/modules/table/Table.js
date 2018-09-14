@@ -21,6 +21,7 @@ export default class Table extends Component {
       lastSortAsc: 'desc',
       selectedItems: [],
       columnsVisible: [],
+        withoutSorting: []
     }
   }
 
@@ -35,7 +36,8 @@ export default class Table extends Component {
       columns: nextProps.columns,
       items: nextProps.items,
       endlineRenders: nextProps.endlineRenders,
-      initialSortProp: nextProps.initialSortProp
+      initialSortProp: nextProps.initialSortProp,
+        withoutSorting: nextProps.withoutSorting,
     });
   }
 
@@ -266,6 +268,7 @@ export default class Table extends Component {
               columns={this.state.columns}
               getIconForSort={this.getIconForSort.bind(this)}
               sortTable={this.sortTable.bind(this)}
+              withoutSorting={this.props.withoutSorting || false}
             />
 
             <ScrollListView
@@ -311,6 +314,7 @@ export default class Table extends Component {
                       columns={this.state.columns}
                       getIconForSort={this.getIconForSort.bind(this)}
                       sortTable={this.sortTable.bind(this)}
+                      withoutSorting={this.props.withoutSorting || false}
                     />
                   )
                 }

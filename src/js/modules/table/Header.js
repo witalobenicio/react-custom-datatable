@@ -49,6 +49,16 @@ export default class Header extends Component {
               </div>
             )}
           { this.state.columns && (this.state.columns.map((column, index) => {
+              if(this.props.withoutSorting){
+                  return (
+                      <div className={'th ' + (column.classes && (column.classes(column, index)))} style={column.style} key={index}>
+                          {/*{ this.props.useShowHideColumns && (*/}
+                          {/*<i className="mdi mdi-close close-column" onClick={() => this.props.changeColumnVisible(column)}></i>*/}
+                          {/*)}*/}
+                          {column.renderHeader ? column.renderHeader(column, index) : column.name}
+                      </div>
+                  );
+              }
             if (this.props.useShowHideColumns) {
               if (_.includes(this.state.columnsVisible, column)) {
                 return (
