@@ -44,6 +44,7 @@ Use the generated .css file
 - `enableCheck`: enable select rows
 - `onSelectedItemsChange`: callback when user selects a row
 - `hiddenRow`: a method to return a boolean indicating if a row needs to be hidden
+- `withoutSorting`: a method to disable column sort
 
 ## Examples
 
